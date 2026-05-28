@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "node:path";
 
 export default defineConfig({
+  base: '/Portfolio/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -14,3 +15,4 @@ export default defineConfig({
     open: true,
   },
 });
+
