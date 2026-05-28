@@ -98,7 +98,7 @@ function ContactItem({
   value,
   href,
 }: {
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: React.ComponentType<{ size?: string | number; className?: string }>;
   label: string;
   value: string;
   href: string;

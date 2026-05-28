@@ -2,7 +2,8 @@ import { motion, type HTMLMotionProps } from "framer-motion";
 import { forwardRef } from "react";
 import { cn } from "@/lib/utils";
 
-interface GlassCardProps extends HTMLMotionProps<"div"> {
+interface GlassCardProps extends Omit<HTMLMotionProps<"div">, "children"> {
+  children?: React.ReactNode;
   variant?: "default" | "soft";
   interactive?: boolean;
   glow?: boolean;
